@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Roger Perez. All rights reserved.
 //
 
+#import "RPGScaryBugData.h"
+#import "RPGScaryBugDoc.h"
+
 #import "RPGMasterViewController.h"
 
 #import "RPGDetailViewController.h"
@@ -16,6 +19,8 @@
 @end
 
 @implementation RPGMasterViewController
+
+@synthesize bugs = _bugs;
 
 - (void)awakeFromNib
 {
@@ -30,6 +35,8 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    self.title = @"Scary Bugs";
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,15 +64,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return _bugs.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyBasicCell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    RPGScaryBugDoc *bug = [self.bugs objectAtIndex:indexPath.row];
+    cell.textLabel.text = bug.data.title;
+    cell.imageView.image = bug.thumbImage;
     return cell;
 }
 

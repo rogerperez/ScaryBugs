@@ -10,4 +10,6 @@
 
 @interface RPGMasterViewController : UITableViewController
 
+@property (strong) NSMutableArray *bugs;
+
 @end
