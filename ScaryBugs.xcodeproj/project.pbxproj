@@ -22,6 +22,8 @@
 		6B60018C18D9352900645CDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B60016B18D9352800645CDC /* UIKit.framework */; };
 		6B60019418D9352900645CDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B60019218D9352900645CDC /* InfoPlist.strings */; };
 		6B60019618D9352900645CDC /* ScaryBugsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B60019518D9352900645CDC /* ScaryBugsTests.m */; };
+		6BC4871F18D936F000BF7A4B /* RPGScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC4871E18D936F000BF7A4B /* RPGScaryBugData.m */; };
+		6BC4872518D93A8400BF7A4B /* RPGScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC4872418D93A8400BF7A4B /* RPGScaryBugDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		6B60019118D9352900645CDC /* ScaryBugsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaryBugsTests-Info.plist"; sourceTree = "<group>"; };
 		6B60019318D9352900645CDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B60019518D9352900645CDC /* ScaryBugsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugsTests.m; sourceTree = "<group>"; };
+		6BC4871D18D936F000BF7A4B /* RPGScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGScaryBugData.h; sourceTree = "<group>"; };
+		6BC4871E18D936F000BF7A4B /* RPGScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGScaryBugData.m; sourceTree = "<group>"; };
+		6BC4872318D93A8400BF7A4B /* RPGScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGScaryBugDoc.h; sourceTree = "<group>"; };
+		6BC4872418D93A8400BF7A4B /* RPGScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGScaryBugDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +121,8 @@
 		6B60016D18D9352800645CDC /* ScaryBugs */ = {
 			isa = PBXGroup;
 			children = (
-				6B60017618D9352800645CDC /* RPGAppDelegate.h */,
-				6B60017718D9352900645CDC /* RPGAppDelegate.m */,
-				6B60017918D9352900645CDC /* Main.storyboard */,
-				6B60017C18D9352900645CDC /* RPGMasterViewController.h */,
-				6B60017D18D9352900645CDC /* RPGMasterViewController.m */,
-				6B60017F18D9352900645CDC /* RPGDetailViewController.h */,
-				6B60018018D9352900645CDC /* RPGDetailViewController.m */,
+				6BC4871C18D936B300BF7A4B /* Model */,
+				6BC4871B18D9368B00BF7A4B /* GUI */,
 				6B60018218D9352900645CDC /* Images.xcassets */,
 				6B60016E18D9352800645CDC /* Supporting Files */,
 			);
@@ -155,6 +156,31 @@
 				6B60019218D9352900645CDC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BC4871B18D9368B00BF7A4B /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				6B60017618D9352800645CDC /* RPGAppDelegate.h */,
+				6B60017718D9352900645CDC /* RPGAppDelegate.m */,
+				6B60017918D9352900645CDC /* Main.storyboard */,
+				6B60017C18D9352900645CDC /* RPGMasterViewController.h */,
+				6B60017D18D9352900645CDC /* RPGMasterViewController.m */,
+				6B60017F18D9352900645CDC /* RPGDetailViewController.h */,
+				6B60018018D9352900645CDC /* RPGDetailViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		6BC4871C18D936B300BF7A4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BC4871D18D936F000BF7A4B /* RPGScaryBugData.h */,
+				6BC4871E18D936F000BF7A4B /* RPGScaryBugData.m */,
+				6BC4872318D93A8400BF7A4B /* RPGScaryBugDoc.h */,
+				6BC4872418D93A8400BF7A4B /* RPGScaryBugDoc.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC4872518D93A8400BF7A4B /* RPGScaryBugDoc.m in Sources */,
+				6BC4871F18D936F000BF7A4B /* RPGScaryBugData.m in Sources */,
 				6B60017818D9352900645CDC /* RPGAppDelegate.m in Sources */,
 				6B60017418D9352800645CDC /* main.m in Sources */,
 				6B60017E18D9352900645CDC /* RPGMasterViewController.m in Sources */,
@@ -463,6 +491,7 @@
 				6B60019B18D9352900645CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B60019C18D9352900645CDC /* Build configuration list for PBXNativeTarget "ScaryBugsTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +500,7 @@
 				6B60019E18D9352900645CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
