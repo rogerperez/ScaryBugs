@@ -32,6 +32,12 @@
 		6BC4874318D9432300BF7A4B /* potatoBugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4873B18D9432300BF7A4B /* potatoBugThumb.jpg */; };
 		6BC4874418D9432300BF7A4B /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4873C18D9432300BF7A4B /* wolfSpider.jpg */; };
 		6BC4874518D9432300BF7A4B /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4873D18D9432300BF7A4B /* wolfSpiderThumb.jpg */; };
+		6BC4874918DA3C6400BF7A4B /* RPGRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC4874818DA3C6400BF7A4B /* RPGRateView.m */; };
+		6BC4874D18DA3CF700BF7A4B /* RPGUIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC4874C18DA3CF700BF7A4B /* RPGUIImageExtras.m */; };
+		6BC4875218DA3D6800BF7A4B /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4874F18DA3D6800BF7A4B /* shockedface2_empty.png */; };
+		6BC4875318DA3D6800BF7A4B /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4875018DA3D6800BF7A4B /* shockedface2_full.png */; };
+		6BC4875418DA3D6800BF7A4B /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4875118DA3D6800BF7A4B /* shockedface2_half.png */; };
+		6BC4875618DA3D7E00BF7A4B /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC4875518DA3D7E00BF7A4B /* logo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,14 @@
 		6BC4873B18D9432300BF7A4B /* potatoBugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBugThumb.jpg; sourceTree = "<group>"; };
 		6BC4873C18D9432300BF7A4B /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
 		6BC4873D18D9432300BF7A4B /* wolfSpiderThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpiderThumb.jpg; sourceTree = "<group>"; };
+		6BC4874718DA3C6400BF7A4B /* RPGRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGRateView.h; sourceTree = "<group>"; };
+		6BC4874818DA3C6400BF7A4B /* RPGRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGRateView.m; sourceTree = "<group>"; };
+		6BC4874B18DA3CF700BF7A4B /* RPGUIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGUIImageExtras.h; sourceTree = "<group>"; };
+		6BC4874C18DA3CF700BF7A4B /* RPGUIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGUIImageExtras.m; sourceTree = "<group>"; };
+		6BC4874F18DA3D6800BF7A4B /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		6BC4875018DA3D6800BF7A4B /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		6BC4875118DA3D6800BF7A4B /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+		6BC4875518DA3D7E00BF7A4B /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,9 @@
 		6B60016D18D9352800645CDC /* ScaryBugs */ = {
 			isa = PBXGroup;
 			children = (
+				6BC4874E18DA3D4E00BF7A4B /* Art */,
+				6BC4874A18DA3CDA00BF7A4B /* Helpers */,
+				6BC4874618DA3C5500BF7A4B /* Views */,
 				6BC4871C18D936B300BF7A4B /* Model */,
 				6BC4871B18D9368B00BF7A4B /* GUI */,
 				6B60018218D9352900645CDC /* Images.xcassets */,
@@ -205,6 +222,35 @@
 				6BC4872418D93A8400BF7A4B /* RPGScaryBugDoc.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6BC4874618DA3C5500BF7A4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BC4874718DA3C6400BF7A4B /* RPGRateView.h */,
+				6BC4874818DA3C6400BF7A4B /* RPGRateView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6BC4874A18DA3CDA00BF7A4B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6BC4874B18DA3CF700BF7A4B /* RPGUIImageExtras.h */,
+				6BC4874C18DA3CF700BF7A4B /* RPGUIImageExtras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6BC4874E18DA3D4E00BF7A4B /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				6BC4875518DA3D7E00BF7A4B /* logo1.png */,
+				6BC4874F18DA3D6800BF7A4B /* shockedface2_empty.png */,
+				6BC4875018DA3D6800BF7A4B /* shockedface2_full.png */,
+				6BC4875118DA3D6800BF7A4B /* shockedface2_half.png */,
+			);
+			name = Art;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,15 +331,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B60018318D9352900645CDC /* Images.xcassets in Resources */,
+				6BC4875218DA3D6800BF7A4B /* shockedface2_empty.png in Resources */,
 				6BC4874218D9432300BF7A4B /* potatoBug.jpg in Resources */,
 				6BC4874418D9432300BF7A4B /* wolfSpider.jpg in Resources */,
 				6BC4874518D9432300BF7A4B /* wolfSpiderThumb.jpg in Resources */,
 				6BC4874118D9432300BF7A4B /* ladybugThumb.jpg in Resources */,
 				6BC4873E18D9432300BF7A4B /* centipede.jpg in Resources */,
 				6BC4873F18D9432300BF7A4B /* centipedeThumb.jpg in Resources */,
+				6BC4875318DA3D6800BF7A4B /* shockedface2_full.png in Resources */,
 				6B60017218D9352800645CDC /* InfoPlist.strings in Resources */,
 				6BC4874318D9432300BF7A4B /* potatoBugThumb.jpg in Resources */,
 				6BC4874018D9432300BF7A4B /* ladybug.jpg in Resources */,
+				6BC4875418DA3D6800BF7A4B /* shockedface2_half.png in Resources */,
+				6BC4875618DA3D7E00BF7A4B /* logo1.png in Resources */,
 				6B60017B18D9352900645CDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC4872518D93A8400BF7A4B /* RPGScaryBugDoc.m in Sources */,
+				6BC4874918DA3C6400BF7A4B /* RPGRateView.m in Sources */,
+				6BC4874D18DA3CF700BF7A4B /* RPGUIImageExtras.m in Sources */,
 				6BC4871F18D936F000BF7A4B /* RPGScaryBugData.m in Sources */,
 				6B60017818D9352900645CDC /* RPGAppDelegate.m in Sources */,
 				6B60017418D9352800645CDC /* main.m in Sources */,
