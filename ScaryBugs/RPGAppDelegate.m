@@ -7,12 +7,23 @@
 //
 
 #import "RPGAppDelegate.h"
+#import "RPGMasterViewController.h"
+#import "RPGScaryBugDoc.h"
 
 @implementation RPGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    RPGScaryBugDoc *bug1 = [[RPGScaryBugDoc alloc] initWithTitle:@"Potato Bug" rating:4 thumbImage:[UIImage imageNamed:@"potatoBugThumb.jpg"] fullImage:[UIImage imageNamed:@"potatoBug.jpg"]];
+    RPGScaryBugDoc *bug2 = [[RPGScaryBugDoc alloc] initWithTitle:@"House Centipede" rating:3 thumbImage:[UIImage imageNamed:@"centipedeThumb.jpg"] fullImage:[UIImage imageNamed:@"centipede.jpg"]];
+    RPGScaryBugDoc *bug3 = [[RPGScaryBugDoc alloc] initWithTitle:@"Wolf Spider" rating:5 thumbImage:[UIImage imageNamed:@"wolfSpiderThumb.jpg"] fullImage:[UIImage imageNamed:@"wolfSpider.jpg"]];
+    RPGScaryBugDoc *bug4 = [[RPGScaryBugDoc alloc] initWithTitle:@"Lady Bug" rating:1 thumbImage:[UIImage imageNamed:@"ladybugThumb.jpg"] fullImage:[UIImage imageNamed:@"ladybug.jpg"]];
+    NSMutableArray *bugs = [NSMutableArray arrayWithObjects:bug1, bug2, bug3, bug4, nil];
+    
+    UINavigationController *navController = (UINavigationController *) self.window.rootViewController;
+    RPGMasterViewController *masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.bugs = bugs;
+    
     return YES;
 }
 							
