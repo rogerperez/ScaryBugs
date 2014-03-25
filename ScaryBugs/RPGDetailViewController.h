@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RPGRateView.h"
 
 @interface RPGDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextField *titleField;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIView *rateView;
+
+@property (weak, nonatomic) IBOutlet UIButton *addPictureTapped;
 @end
